@@ -185,7 +185,44 @@ nav ul{
    cursor: pointer;
   
 }
+/* picture section related styles */
 
+.picture-section{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+     gap: 100px; 
+      max-width: 1000px;
+     margin: 0 auto;
+    /* padding: 0 200px; */
+}
+.upper-img{
+    position: relative;
+    left: 70px;
+   
+}
+.lower-img{
+    position: relative;
+    top: -200px;
+    
+}
+.picture-section-title{
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 700;
+    
+}
+.picture-section-title span{
+    background: linear-gradient(180deg, #F948B2, #8758F1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.picture-section-description{
+    color: #534C64;
+    font-size: 1.1rem;
+  
+}
 
 
 
@@ -254,8 +291,24 @@ nav ul{
     .online-games-section{
         padding: 30px;
     }
+    .picture-section{
+        flex-direction: column;
+        padding: 30px;
+        gap: 20px;
+    }
+   .picture-section .upper-img{
+        width: 100%;
+        left: 20px;
+   }
+   .picture-section-title{
+    font-size: 1.8rem;
+   }
+   .picture-section .lower-img{
+   width: 50%;
+   top: -120px;
+   }
+   
 }
-
 /* for tablets */
 
 @media screen and (min-width:576px) and (max-width:920px) {
@@ -296,5 +349,9 @@ nav ul{
     }
     .online-games-container{
         flex-direction: column;
+    }
+    .picture-section{
+        flex-direction: column;
+        padding: 30px;
     }
 }
